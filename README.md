@@ -133,6 +133,4 @@ The MDP formulation, reward design, evaluation and write-up were shared team wor
 - Opoku Asante Emmanuel (vkpoasante@gmail.com)
 - Julius Aban Odai
 
-## Licence
 
-Choose a licence (for example MIT) and add a `LICENSE` file.
