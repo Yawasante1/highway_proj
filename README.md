@@ -82,33 +82,6 @@ In priority order:
 4. Replace the kinematic observation with an occupancy grid and a CNN.
 5. Add more seeds first. Run-to-run spread, not training budget, was the real limit on what we could conclude.
 
-## Repository contents
-
-```
-.
-├── README.md
-├── requirements.txt
-├── configs/          # base.yaml, dqn.yaml, ddqn.yaml
-├── agents/           # double_dqn.py, callbacks.py
-├── envs/             # make_env.py, monitoring.py, observation.py
-├── scripts/          # run_all.py, evaluate.py, plot.py, report_protocol.py
-├── tests/            # test_pipeline.py
-├── docs/             # 01_mdp_formulation.md
-└── results/          # analysis outputs and figures
-```
-
-## Reproducing the results
-
-```bash
-pip install -r requirements.txt
-python tests/test_pipeline.py                     # verification suite (~3 min)
-python scripts/run_all.py                         # full experiment
-python scripts/evaluate.py --include-random       # evaluation incl. random baseline
-python scripts/plot.py                            # regenerates all figures
-python scripts/report_protocol.py                 # checks seeds and hyperparameters
-```
-
-Tested with Stable-Baselines3 2.9.0, PyTorch 2.13.0, highway-env 1.12.1 and Gymnasium 1.3.0.
 
 ## My contribution
 
